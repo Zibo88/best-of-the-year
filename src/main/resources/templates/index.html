@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Pagina di benvenuto</title>
+<title>Show all products</title>
+<div th:replace="~{fragments :: head}"></div>
 </head>
 <body>
-<h1>Best of the year by</h1>
+<h1 class="verde">Best of the year by</h1>
+<div th:replace="~{fragments :: link}"></div>
+
+<div th:replace="~{fragments :: script}"></div>
 </body>
 </html>
+
+
