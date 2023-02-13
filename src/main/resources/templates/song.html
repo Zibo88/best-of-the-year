@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head  xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Pagina di benvenuto</title>
+</head>
+<body>
+<h1> La canzone selezionata: </h1>
+<div th:each="songs:${song}" th:text="${song.getTitolo()}"></div>
+</body>
+</html>
