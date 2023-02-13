@@ -1,5 +1,11 @@
 package com.corsojava.bestoftheyear;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
 public class Songs {
 	
 	private int id;
@@ -18,6 +24,9 @@ public class Songs {
 	public String getTitolo() {
 		return titolo;
 	}
+	
+	
+	
 	
 	
 	
