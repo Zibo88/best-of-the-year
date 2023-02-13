@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Pagina di benvenuto</title>
 </head>
 <body>
-<h1 th:each="song:${songs}" th:text="${song.getTitolo()}"> </h1>
+
+<h1>Le migliori canzoni del 2023</h1>
+	<div th:replace="~{fragments :: link}"></div>
+	<div  th:each="song:${songs}">
+		<a  th:href="@{/songs/{id}(id=${song.getId()})}" th:text="${song.getTitolo()}" ></a>
+	</div>
 </body>
 </html>
