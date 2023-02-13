@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head  xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Pagina di benvenuto</title>
+</head>
+<body>
+<h1 > Il film che hai selezionato </h1>
+<div th:each="movie:${movie}" th:text="${movie.getTitolo()}">
+	
+</div>
+
+</body>
+</html>
