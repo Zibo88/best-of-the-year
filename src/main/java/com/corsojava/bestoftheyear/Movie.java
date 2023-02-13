@@ -3,7 +3,7 @@ package com.corsojava.bestoftheyear;
 public class Movie {
 	
 	private int id;
-	private String titolo = "Il mio primo libro";
+	private String titolo="";
 	
 	
 	public Movie(int id, String titolo) {
@@ -15,6 +15,10 @@ public class Movie {
 
 	public String getTitolo() {
 		return titolo;
+	}
+	
+	public int getId() {
+		return id;
 	}
 	
 	
